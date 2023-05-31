@@ -1,0 +1,151 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate square of given number
+    int n, square;
+    printf("enter any number");
+    scanf("%d",&n);
+    square=n*n;
+    printf("square of number =%d",square);
+}
+
+________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate area of triangle
+    float b,h, area;
+    printf("enter base and height of a tringle");
+    scanf("%f%f",&b,&h);
+    area=0.5*b*h;
+    printf("area =%f",area);
+}
+
+_______________________________________________________________________
+
+
+#include <stdio.h>
+#define pi 3.14
+void main() {
+    // to calculate area of circle
+    float r, area;
+    printf("enter radius of circle");
+    scanf("%f",&r);
+    area=pi*r*r;
+    printf("area =%f",area);
+}
+
+________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate simple interest
+    float r,p,t,si;
+    printf("enter rate r");
+    printf("\nenter principle p");
+    printf("\nenter time t");
+    scanf("%f%f%f",&r,&p,&t);
+    si=p*t*r/100;
+    printf("simple intereat is =%f",si);
+}
+
+_________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to swap using third variable
+    int a,b,temp;
+    printf("enter two numbers a and b");
+    scanf("%d%d",&a,&b);
+    printf("\nbefore swaping value of a=%d",a);
+    printf("\nbefore swaping value of b=%d",b);
+    temp=a;
+    a=b;
+    b=temp;
+    printf("\nafter swaping value of a=%d",a);
+    printf("\nafter swaping value of b=%d",b);
+}
+
+______________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to swap without using third variable
+    int a,b;
+    printf("enter two numbers a and b");
+    scanf("%d%d",&a,&b);
+    printf("\nbefore swaping value of a=%d",a);
+    printf("\nbefore swaping value of b=%d",b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("\nafter swaping value of a=%d",a);
+    printf("\nafter swaping value of b=%d",b);
+}
+
+______________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to swap without using third variable
+    float f,c;
+    printf("enter temperature in celcius");
+    scanf("%f",&c);
+    f=1.8*c+32;
+    printf("\ntemperature in fahrenheit=%f",f);
+}
+
+_______________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate the sum of first and last digit of four digit number
+    int n, u, t, h, th, sum;
+    printf("enter any four digit number");
+    scanf("%d",&n);
+    th=n/1000;
+    h=(n/100)%10;
+    t=(n/10)%10;
+    u=n%10;
+    sum=th+u;
+    printf("\nsum of first and last digit number is %d",sum);
+}
+
+________________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to check palindrome of three digit number
+    int n, u, t, h , rnum;
+    printf("enter any three digit number");
+    scanf("%d",&n);
+    
+    h=(n/100);
+    t=(n/10)%10;
+    u=n%10;
+    rnum=u*100+t*10+h*1;
+    if (n==rnum){
+        printf("\n palindrome");
+    }else{
+    
+    printf("\n palindrome");
+}
+}
+
+_____________________________________________________________________________________-
+
