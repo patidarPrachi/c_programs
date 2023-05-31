@@ -149,3 +149,125 @@ void main() {
 
 _____________________________________________________________________________________-
 
+
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to check Armstrong of three digit number
+    int n, u, t, h , sum;
+    printf("enter any three digit number :");
+    scanf("%d",&n);
+    
+    h=(n/100);
+    t=(n/10)%10;
+    u=n%10;
+    sum=h*h*h+t*t*t+u*u*u;
+    if (n==sum){
+        printf("\n armstrong");
+    }else{
+    
+    printf("\n  not armstrong");
+}
+}
+
+________________________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to check entered char is vowel or not
+    char ch ;
+    printf("enter any character :");
+    scanf("%c",&ch);
+    if (ch=='a' ||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+    {
+        printf("\n It is Vowel");
+    }else{
+        printf("\n  It is Consonant");
+    }
+}
+
+__________________________________________________________________________________________
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate year is leap or not
+    int y;
+    printf("enter year :");
+    scanf("%d",&y);
+    if ((y%4==0) && ((y%400==0) || (y%100!=0)))
+    {
+        printf("\n It is leap year");
+    }else{
+        printf("\n  It is not leap year");
+    }
+}
+
+__________________________________________________________________________________________________
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // to calculate Area of different shapesbased on user choice S, C or R
+    char ch;
+    int area;
+    printf("enter your choice ch :\nenter S for square\n C for circle \n R for rectangle  :");
+    scanf("%c",&ch);
+    
+    switch(ch)
+    {
+        case 's': int side;
+                  printf("\nenter side");
+                  scanf("%d",&side);
+                  area=side*side;
+                  printf("\narea of square is %d",area);
+                  break;
+        case 'c': int r, pi=3.14;
+                  printf("\nenter radius : ");
+                  scanf("%d",&r);
+                  area=pi*r*r;;
+                  printf("\narea of circle is %d",area);
+                  break;
+        case 'r': int l, b;
+                  printf("\nenter length and width : ");
+                  scanf("%d%d",&l,&b);
+                  printf("\nvalue of %d %d : ",l,b);
+                  area=l*b;
+                  printf("\n area of rectangle is %d",area);
+                  break;
+        default : printf("\n invalid choice");
+    }
+}
+
+___________________________________________________________________________________________________
+
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void main() {
+    // Write C code here
+    float bs,ta,pf,da=500,ns,gs;
+    printf("enter basic salary");
+    scanf("%f",&bs);
+    ta=bs*0.1;
+    printf("ta is %f",ta);
+    pf=bs*0.078;
+    printf("pf is %f",pf);
+    gs=bs+ta+da;
+    ns=gs-pf;
+    printf("gross salary is %f",gs);
+    printf("net salary is %f",ns); 
+}
+
+__________________________________________________________________________________________________
+
+
